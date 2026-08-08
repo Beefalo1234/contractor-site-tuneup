@@ -1,0 +1,8 @@
+# Local-only — never commit
+relay/secrets.env
+relay/data/
+relay/*.log
+relay/tunnel-url.txt
+tools/cloudflared.exe
+__pycache__/
+*.pyc

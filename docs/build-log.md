@@ -37,11 +37,26 @@ https://github.com/Beefalo1234/contractor-site-tuneup
 5. **Launch message** — docs/launch-message.md (FB trades-group post +
    LinkedIn / Nextdoor / LeadSetter cross-sell variants, posting tips).
 
-## Pipeline test results (real contractor sites)
+## Pipeline test results (real contractor sites — 2026-08-08)
 
-- Site A: https://palisadesfuel.com → see audit/reports/palisadesfuel.md
-- Site B: https://www.nuwayservice.com → see audit/reports/nuwayservice.md
-- (scores and top findings filled in below after the run completes)
+- Site A: https://palisadesfuel.com (HVAC, NY) → score **64/100**
+  - P1: LCP 3.5s (slow mobile load) · 15/29 images missing alt text ·
+    phone not near top of page · NAP address missing
+  - P2: title tag length 61
+- Site B: https://www.nuwayservice.com (HVAC, NY/CT) → score **52/100**
+  - P1: mobile speed 63/100 · LCP 4.0s · no local-business structured
+    data · phone not near top · no /contact page
+  - P2: title tag 169 chars · no canonical tag
+- Full reports: audit/reports/*.md (+ .html print-to-PDF, .json). Speed
+  data comes from local Lighthouse 13 (Edge headless) — real measured
+  numbers, not estimates.
+
+## Ops home (durable, survives kanban cleanup)
+
+- Project lives at **C:\Users\Gray\Desktop\contractor-site-tuneup\**
+  (git clone of the repo; relay, tunnel, audit tooling all run from here).
+- Watchdog cron keeps the relay alive + config in sync: job
+  `cstu-relay-watchdog` (every 15 min, zero tokens, no_agent script).
 
 ## Acceptance criteria status
 

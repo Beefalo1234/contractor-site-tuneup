@@ -4,5 +4,5 @@
 // When the local relay tunnel restarts with a new URL, update the first
 // entry here and re-push (see README.md "Keep the form alive").
 const RELAY_URLS = [
-  "https://ban-cdna-strike-wives.trycloudflare.com"
+  "https://chips-characteristic-conventions-distinct.trycloudflare.com"
 ];

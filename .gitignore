@@ -4,5 +4,7 @@ relay/data/
 relay/*.log
 relay/tunnel-url.txt
 tools/cloudflared.exe
+audit/node_modules/
+audit/reports/
 __pycache__/
 *.pyc
